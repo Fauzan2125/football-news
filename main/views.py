@@ -4,6 +4,7 @@ from main.models import News
 from django.http import HttpResponse
 from django.core import serializers
 
+
 def show_json_by_id(request, news_id):
    try:
        news_item = News.objects.get(pk=news_id)
